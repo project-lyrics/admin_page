@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Feelin' admin - artist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <nav>
+      <h2>
+        <a href="index.html">Feenlin' admin</a>
+      </h2>
+      <ul class="menu">
+        <li id="clicked"><a href="artist.html">아티스트 관리</a></li>
+      </ul>
+      <div id="profile-wrapper">
+        <p>Username</p>
+        <input type="submit" value="Logout">
+      </div>
+    </nav>
+
+    <section>
+      <h2>아티스트 추가하기</h2>
+      <form action="artist_list.html" method="post">
+        <table id="add-artist-wrapper"> 
+            <tr><td class="header">ID</td></tr>
+            <tr><td><input type="text" class="info" placeholder="ID를 입력하세요" name="id" required></td></tr>
+            <tr><td class="header">아티스트명</td></tr>
+            <tr><td><input type="text" class="info" placeholder="아티스트명을 입력하세요" name="artist_name" required></td></tr>
+            <tr><td class="header">멤버</td></tr>
+            <tr><td><input type="text" class="info" placeholder="{이름}, {이름} 형태로 입력하세요" name="member"></td></tr>
+            <tr><td class="header">사진</td></tr>
+            <tr><td><input type="url" class="info" placeholder="사진 링크를 입력하세요" name="image_link"></td></tr>
+            <tr><td class="header">인스타 링크</td></tr>
+            <tr><td><input type="url" class="info" placeholder="인스타 링크를 입력하세요" name="insta_link"></td></tr>
+        </table>
+        <div id="buttons-wrapper">
+          <input type="submit" class="button" value="cancel">
+          <input type="submit" class="button" value="add">
+        </div>
+        </form>
+    </section>
+
+  </body>
+</html>

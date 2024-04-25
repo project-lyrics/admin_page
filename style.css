@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 200px;
+  background-color: #e1edfe;
+  border-right: 1px solid #20368d;
+  position: fixed;
+  height: 100%;
+}
+
+h2 {
+  font-size: 22px;
+  padding: 20px;
+  margin: 0;
+}
+
+a {
+  text-decoration-line: none;
+  color: #20368d;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+
+}
+
+.menu li a {
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color:#20368d
+}
+
+.menu li a:hover {
+  background-color: #8CAFF8;
+  color:white;
+}
+
+#clicked {
+  background-color: #8CAFF8;
+}
+
+section {
+  margin:0 0 0 220px;
+}
+
+.login-wrapper{
+  width: 400px;
+  height: 350px;
+  padding: 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.login-wrapper > h2{
+  font-size: 24px;
+  color: #20368d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#login-form > input{
+  width: 100%;
+  height: 48px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  background-color: #F8F8F8;
+}
+#login-form > input::placeholder{
+  color: #D2D2D2;
+}
+#login-form > input[type="submit"]{
+  color: #fff;
+  font-size: 16px;
+  background-color: #20368d;
+  margin-top: 20px;
+}
+
+#profile-wrapper {
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  padding: 0 20px;
+}
+
+#profile-wrapper > p {
+  font-size: 20px;
+}
+
+#profile-wrapper > input {
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  border-radius: 6px;
+}
+
+#add-artist-wrapper {
+  /*width: 600px;*/
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.info {
+  border: 1.5px #8CAFF8 solid;
+  width: 700px;
+  height: 30px;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.header {
+  height: 30px;
+}
+
+#buttons-wrapper {
+  margin-left: 40px;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 800;
+  border: 0;
+  outline: 1.5px rgb(68, 136, 244) solid;
+  border-radius: 5px;
+  /*padding-left: 10px;*/
+  background-color: #8CAFF8;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #20368d;
+  color:white;
+}
