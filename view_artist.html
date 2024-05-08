@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Feelin' admin - add artist</title>
+    <title>Feelin' admin - view artist</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
@@ -24,23 +24,27 @@
     </nav>
 
     <section>
-      <h2>아티스트 추가하기</h2>
+      <h2>아티스트 상세보기</h2>
       <form action="artist_list.html" method="post">
         <table id="add-artist-wrapper"> 
             <tr><td class="header">ID</td></tr>
-            <tr><td><input type="text" class="info" placeholder="ID를 입력하세요" name="id" required></td></tr>
+            <tr><td><input type="text" class="info" name="id" readonly></td></tr>
             <tr><td class="header">아티스트명</td></tr>
-            <tr><td><input type="text" class="info" placeholder="아티스트명을 입력하세요" name="artist_name" required></td></tr>
+            <tr><td><input type="text" class="info" name="artist_name" readonly></td></tr>
             <tr><td class="header">멤버</td></tr>
-            <tr><td><input type="text" class="info" placeholder="{이름}, {이름} 형태로 입력하세요" name="member"></td></tr>
+            <tr><td><input type="text" class="info" name="member" readonly></td></tr>
             <tr><td class="header">사진</td></tr>
-            <tr><td><input type="url" class="info" placeholder="사진 링크를 입력하세요" name="image_link"></td></tr>
+            <tr><td><input type="url" class="info" name="image_link" readonly></td></tr>
             <tr><td class="header">인스타 링크</td></tr>
-            <tr><td><input type="url" class="info" placeholder="인스타 링크를 입력하세요" name="insta_link"></td></tr>
+            <tr><td><input type="url" class="info" name="insta_link" readonly></td></tr>
+            <tr><td class="header">최종 수정 일자</td></tr>
+            <tr><td><input type="datetime" class="info" name="update_date" readonly></td></tr>
+            <tr><td class="header">최종 수정자</td></tr>
+            <tr><td><input type="text" class="info" name="update_member" readonly></td></tr>
         </table>
         <div id="buttons-wrapper">
-          <input type="button" class="button" value="취소하기" onclick="location.href='artist_list.html'">
-          <input type="submit" class="button" value="등록하기">
+          <input type="submit" class="button" value="삭제하기">
+          <input type="button" class="button" value="수정하기" onclick="location.href='modify_artist.html'">
         </div>
       </form>
     </section>
